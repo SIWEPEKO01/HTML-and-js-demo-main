@@ -20,6 +20,7 @@
     --text-color: #ffffff;
     --main-color: #1aa090;
     --other-color: #d6d6d6;
+    --more-color: #ffffff;
 }
 
 body{
@@ -1014,4 +1015,80 @@ transition: all .45s ease;
   padding: 10px;
   border: 0px;
   box-shadow: black 5px 8px 5px;
+}
+
+
+/*cookie*/
+
+
+.wrapper {
+  position: fixed;
+  bottom: 50px;
+  right: -370px;
+  max-width: 345px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px 25px 22px;
+  transition: right 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.wrapper.show {
+  right: 20px;
+}
+.wrapper .heder {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.heder i {
+  color: var(--c);
+  font-size: 32px;
+}
+.heder h2 {
+  color: var(--main-color);
+  font-weight: 500;
+}
+.wrapper .data {
+  margin-top: 16px;
+}
+.wrapper .data p {
+  color: #333;
+  font-size: 16px;
+}
+.data p a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+.data p a:hover {
+  text-decoration: underline;
+}
+.wrapper .buttons {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttons .button {
+  border: none;
+  color: #fff;
+  padding: 8px 0;
+  border-radius: 4px;
+  background: var();
+  cursor: pointer;
+  width: calc(100% / 2 - 10px);
+  transition: all 0.2s ease;
+}
+.buttons #acceptBtn:hover {
+  background-color: #034bf1;
+}
+#declineBtn {
+  border: 2px solid #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+}
+#declineBtn:hover {
+  background-color: #4070f4;
+  color: #fff;
 }
